@@ -1,1 +1,1 @@
-# Boiko_way
+# Проект для грейдирования от htmlacademy "Way"
