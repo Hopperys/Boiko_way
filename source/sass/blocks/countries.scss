@@ -1,0 +1,251 @@
+.countries {
+  margin-left: 19.7%;
+  margin-right: 18.7%;
+
+  @media (max-width: $tablet) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.countries__title {
+  margin-top: 200px;
+  width: 358px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  color: $darkblue;
+  letter-spacing: -1.245px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 229px;
+    height: 4px;
+    background-color: $pink;
+    left: 0;
+    top: 190px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 80px;
+    font-size: 30px;
+    line-height: 45px;
+    width: auto;
+    margin-left: 30.33%;
+    margin-right: 30.33%;
+    letter-spacing: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin: 80px 0 20px 0;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+  }
+}
+
+.countries__description {
+  margin-top: 65px;
+  font-size: 16px;
+  line-height: 28px;
+  color: $darkblue;
+  opacity: 0.7;
+  letter-spacing: -0.466667px;
+  margin-right: 64.38%;
+  margin-bottom: 55px;
+  width: 328px;
+
+  @media (max-width: $tablet) {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 28px;
+    width: auto;
+    margin-left: 27.6%;
+    margin-right: 27.6%;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  @media (max-width: $mobile) {
+    margin: 0 auto 20px auto;
+  }
+}
+
+.countries__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet) {
+    margin-left: 10%;
+  }
+
+  @media (max-width: $mobile) {
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+  }
+}
+
+.countries__link {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 350px;
+  height: 430px;
+  margin-right: 60px;
+  margin-bottom: 100px;
+
+  &--montenegro {
+    margin-left: 15%;
+    margin-right: 120px;
+
+    @media (max-width: 1800px) {
+      margin-left: 0;
+      margin-right: 60px;
+    }
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+
+    @media (max-width: 1800px) {
+      margin-right: 60px;
+    }
+
+    @media (max-width: $tablet) {
+      margin-right: 38px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 350px;
+      height: 430px;
+      left: 0;
+      top: 0;
+      background-color: rgba(20, 21, 23, 0.6);
+      order: 2;
+    }
+  }
+
+  &:focus .countries__details,
+  &:hover .countries__details {
+    display: inline-block;
+  }
+
+  &:hover .countries__name,
+  &:focus .countries__name {
+    background-color: rgb(114, 114, 116);
+    order: 2;
+  }
+
+  &:active {
+    &::before {
+      background-color: rgba(20, 21, 23, 0.3);
+    }
+  }
+
+  &:active .countries__details {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tablet) {
+    margin-left: 0;
+    margin-right: 38px;
+    margin-bottom: 40px;
+    width: 288px;
+    height: 425px;
+
+    &--croatia {
+      margin-left: 164px;
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 288px;
+        height: 425px;
+        left: 0;
+        top: 0;
+        background-color: rgba(20, 21, 23, 0.6);
+        order: 2;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin-left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
+    margin-bottom: 35px;
+
+    &--croatia {
+      margin-left: 50%;
+    }
+  }
+}
+
+.countries__details {
+  display: none;
+  position: absolute;
+  top: 165px;
+  left: 42px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-sizing: border-box;
+  padding: 30px 23px 29px 25px;
+
+  @media (max-width: $tablet) {
+    left: 23px;
+    padding: 20px 15px 20px 10px;
+  }
+}
+
+.countries__img {
+  display: block;
+  width: 350px;
+  height: 430px;
+
+  @media (max-width: $tablet) {
+    width: 288px;
+    height: 425px;
+  }
+}
+
+.countries__name {
+  background-color: $white;
+  letter-spacing: -0.415px;
+  font-size: 24px;
+  line-height: 29px;
+  color: $darkblue;
+  display: inline-block;
+  margin-left: 19.15%;
+  margin-right: 19.15%;
+  width: 215px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  transform: translateY(-88px);
+  text-align: center;
+
+  @media (max-width: $tablet) {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    margin-bottom: 0;
+  }
+}

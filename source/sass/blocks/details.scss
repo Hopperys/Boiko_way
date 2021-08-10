@@ -1,0 +1,416 @@
+.details {
+  margin-left: 19.7%;
+  margin-right: 18.7%;
+
+  @media (max-width: $tablet) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 55px;
+    position: relative;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 0;
+  }
+}
+
+.details__review {
+  transform: translate(41vw, -465px);
+
+  @media (max-width: $tablet) {
+    transform: translate(0, -15px);
+    margin-top: 90px;
+    margin-bottom: 80px;
+    margin-left: 25.13%;
+  }
+
+  @media (max-width: $mobile) {
+    margin: 0;
+    transform: translate(-50%, 80px);
+  }
+}
+
+.details__greece {
+  display: none;
+  background-image: url("../img/countries/greece_big.jpg");
+  background-repeat: no-repeat;
+  background-position: 63.2% 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/countries/greece_big@2x.jpg");
+  }
+
+  @media (max-width: $tablet) {
+    background-image: url("../img/countries/greece_big_tablet.jpg");
+    background-position: 0 333px;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/countries/greece_big_tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile) {
+    background-image: url("../img/countries/greece_big_mobile.jpg");
+    background-position: 0 568px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/countries/greece_big_mobile@2x.jpg");
+    }
+  }
+}
+
+.details__albania {
+  display: none;
+  background-image: url("../img/countries/albania_big.jpg");
+  background-repeat: no-repeat;
+  background-position: 63.2% 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/countries/albania_big@2x.jpg");
+  }
+
+  .details__review {
+    transform: translate(41vw, -380px);
+  }
+
+  @media (max-width: $tablet) {
+    background-image: url("../img/countries/albania_big_tablet.jpg");
+    background-position: 0 333px;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/countries/albania_big_tablet@2x.jpg");
+    }
+
+    .details__review {
+      transform: translate(0, 0);
+      margin-bottom: 80px;
+      margin-top: 190px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    background-image: url("../img/countries/albania_big_mobile.jpg");
+    background-position: 0 bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/countries/albania_big_mobile@2x.jpg");
+    }
+
+    .details__review {
+      transform: translate(-50%, 60px);
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.details__macedonia {
+  display: none;
+  background-image: url("../img/countries/macedonia_big.jpg");
+  background-repeat: no-repeat;
+  background-position: 63.2% 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/countries/macedonia_big@2x.jpg");
+  }
+
+  .details__review {
+    transform: translate(41vw, -380px);
+  }
+
+  @media (max-width: $tablet) {
+    background-image: url("../img/countries/macedonia_big_tablet.jpg");
+    background-position: 0 333px;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/countries/macedonia_big_tablet@2x.jpg");
+    }
+
+    .details__review {
+      transform: translate(0, -60px);
+      margin-bottom: 80px;
+      margin-top: 190px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    background-image: url("../img/countries/macedonia_big_mobile.jpg");
+    background-position: 0 bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/countries/macedonia_big_mobile@2x.jpg");
+    }
+
+    .details__review {
+      transform: translate(-50%, 75px);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.details__montenegro {
+  display: none;
+  background-image: url("../img/countries/montenegro_big.jpg");
+  background-repeat: no-repeat;
+  background-position: 63.2% 0;
+  margin-bottom: 250px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/countries/montenegro_big@2x.jpg");
+  }
+
+  .details__review {
+    transform: translate(41vw, -295px);
+  }
+
+  @media (max-width: $tablet) {
+    background-image: url("../img/countries/montenegro_big_tablet.jpg");
+    background-position: 0 333px;
+    background-size: contain;
+    margin-bottom: 80px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/countries/montenegro_big_tablet@2x.jpg");
+    }
+
+    .details__review {
+      transform: translate(0, 30px);
+      margin-top: 210px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    background-image: url("../img/countries/montenegro_big_mobile.jpg");
+    background-position: 0 bottom;
+    margin-bottom: 0;
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/countries/montenegro_big_mobile@2x.jpg");
+    }
+
+    .details__review {
+      transform: translate(-50%, 75px);
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.details__croatia {
+  display: none;
+  background-image: url("../img/countries/croatia_big.jpg");
+  background-repeat: no-repeat;
+  background-position: 63.2% 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/countries/croatia_big@2x.jpg");
+  }
+
+  .details__review {
+    transform: translate(41vw, -355px);
+  }
+
+  @media (max-width: $tablet) {
+    background-image: url("../img/countries/croatia_big_tablet.jpg");
+    background-position: 0 333px;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/countries/croatia_big_tablet@2x.jpg");
+    }
+
+    .details__review {
+      transform: translate(0, -80px);
+      margin-top: 210px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    background-image: url("../img/countries/croatia_big_mobile.jpg");
+    background-position: 0 bottom;
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/countries/croatia_big_mobile@2x.jpg");
+    }
+
+    .details__review {
+      transform: translate(-50%, 75px);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.details__show {
+  display: block;
+}
+
+.details__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  position: relative;
+  margin-right: 18.7%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $darkblue;
+    opacity: 0.3;
+    left: 0;
+    top: 39px;
+  }
+
+  @media (max-width: $tablet) {
+    flex-wrap: nowrap;
+    margin-right: 0;
+    margin-left: 20px;
+    overflow-x: scroll;
+    position: static;
+
+    &::after {
+      width: 97%;
+      left: 3%;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 5px;
+    margin-left: 16px;
+
+    &::after {
+      left: 5%;
+      width: 95%;
+    }
+  }
+}
+
+.details__list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.details__item {
+  letter-spacing: -0.415px;
+  font-weight: 500;
+  font-size: 20px;
+
+  &:not(:last-of-type) {
+    margin-right: 100px;
+  }
+}
+
+.details__link {
+  color: $darkblue;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &--current {
+    color: $pink;
+    opacity: 1;
+  }
+
+  &:focus,
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    color: $black;
+    opacity: 1;
+  }
+}
+
+.details__title {
+  margin-top: 90px;
+  letter-spacing: -1.245px;
+  color: $darkblue;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 175px;
+    height: 3px;
+    background-color: $pink;
+    left: 0;
+    top: 104px;
+  }
+
+  @media (max-width: $tablet) {
+    letter-spacing: 0;
+    font-size: 30px;
+    line-height: 45px;
+    margin-top: 45px;
+    text-align: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 40px;
+  }
+}
+
+.details__description {
+  line-height: 28px;
+  color: $darkblue;
+  opacity: 0.7;
+  letter-spacing: -0.466667px;
+  margin-right: 68%;
+
+  @media (max-width: $tablet) {
+    margin-right: 2.61%;
+    margin-left: 2.61%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile) {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+.details__button {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 40px;
+  padding-right: 38px;
+  letter-spacing: 2px;
+  margin-top: 35px;
+
+  @media (max-width: $tablet) {
+    margin-left: 33.6%;
+    padding-left: 51px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+    margin-top: 14px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
+    padding-left: 70px;
+    padding-right: 69px;
+    margin-top: 20px;
+  }
+}

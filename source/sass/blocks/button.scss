@@ -1,0 +1,26 @@
+.button {
+  background-color: $pink;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: $orange;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 10px;
+    line-height: 12px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+}

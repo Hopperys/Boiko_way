@@ -1,0 +1,100 @@
+.review {
+  width: 382px;
+  background-color: $white;
+
+  @media (max-width: $mobile) {
+    width: 268px;
+    text-align: center;
+    margin-left: 50%;
+    margin-right: -50%;
+  }
+}
+
+.review__title {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.691667px;
+  color: $darkblue;
+  position: relative;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 68px;
+    height: 1px;
+    background-color: $pink;
+    left: 0;
+    top: 49px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 45px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 0;
+    margin-top: 30px;
+
+    &::after {
+      left: 6px;
+      top: 37px;
+    }
+  }
+}
+
+.review__description {
+  letter-spacing: -0.408333px;
+  font-size: 14px;
+  line-height: 28px;
+  opacity: 0.7;
+  color: $darkblue;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  @media (max-width: $mobile) {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.review__author {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 31px;
+  padding-bottom: 20px;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+.review__avatar {
+  @media (max-width: $mobile) {
+    width: 37px;
+  }
+}
+
+.review__name {
+  line-height: 20px;
+  color: $darkblue;
+  font-weight: 500;
+  letter-spacing: -0.466667px;
+  margin: 9px 0;
+  margin-left: 16px;
+
+  @media (max-width: $mobile) {
+    margin-left: 6px;
+    margin-top: 6px;
+    margin-bottom: 40px;
+  }
+}
