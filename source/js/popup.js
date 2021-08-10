@@ -6,6 +6,7 @@ const emailInput = orderPopup.querySelector('.order__input--email');
 const submitButton = document.querySelector('.popup__submit');
 
 const form = document.querySelector('.additional__form');
+const additionalPhoneInput = form.querySelector('.order__input--phone');
 const additionalPopup = document.querySelector('.popup--success');
 const modalCloseButton = additionalPopup.querySelector('.popup__close');
 
@@ -103,9 +104,20 @@ const popupCloseHandler = () => {
   additionalPopup.classList.remove('popup--show');
 };
 
-form.addEventListener('submit', () => {
-  additionalPopup.classList.add('popup--show');
-  document.addEventListener('keydown', popupKeydownHandler);
+form.addEventListener('submit', (evt) => {
+  if (!additionalPhoneInput.value) {
+    evt.preventDefault();
+    additionalPhoneInput.style.border = '1px solid #fe7865';
+  } else {
+    additionalPhoneInput.style.border = '1px solid rgba(44, 46, 63, 0.3)';
+    additionalPopup.classList.add('popup--show');
+    document.addEventListener('keydown', popupKeydownHandler);
+    document.addEventListener('click', (evt) => {
+      if (!additionalPopup.contains(evt.target)) {
+        additionalPopup.classList.remove('popup--show');
+      }
+    })
+  }
 });
 
 modalCloseButton.addEventListener('click', popupCloseHandler);
