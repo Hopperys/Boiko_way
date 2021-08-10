@@ -294,6 +294,7 @@
     }
   }
 }
+// Обшарил гугл и не нашел рабочего способа скрыть скролл в мозиле (пробовал scrollbar-width: none, overflow: -moz-scrollbars-none, ::-moz-scrollbar)
 
 .details__list::-webkit-scrollbar {
   width: 0;
